@@ -8,5 +8,7 @@ def addToDo(request):
     return HttpResponse("Hello addToDo!")
 
 def calculation(request):
-    calculation = 12+8
-    return HttpResponse("calculation : " + str(calculation))
+    a= 12
+    b=8
+    calculation = a+b
+    return HttpResponse("calculation: " + str(a) +"+"+ str(b) + '=' + str(calculation))
